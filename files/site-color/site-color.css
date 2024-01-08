@@ -1,0 +1,28 @@
+/*
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #181A32;
+	    color: #fff;
+    }
+}
+*/
+
+html.dark body {
+    background-color: #181A32;
+}
+html.light body {
+    background-color: #fff;
+}
+html.dark .page__action {
+    
+    .circle {
+        right: 4px;
+    }
+}
+html.light .page__action {
+
+    .circle {
+        left: 4px;
+    }
+}
