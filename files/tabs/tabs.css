@@ -1,9 +1,9 @@
-.tabs__wrap-tags {
+#tabs .tabs__wrap-tags {
     border-radius: 12px;
     background-color: #1C1F3E;
     padding: 4px;
 }
-.tab {
+#tabs .tab {
     align-items: center;
     color: #8C90CA;
     cursor: pointer;
@@ -14,7 +14,7 @@
     padding: 0 12px;
     text-align: center;
 }
-.tab-active {
+#tabs .tab-active {
     border-radius: 8px;
     background-color: #2B2F5B;
     color: #fff;
@@ -31,22 +31,22 @@
 }
 @media (min-width: 576px) {
 
-    .tabs__wrap-tags {
+    #tabs .tabs__wrap-tags {
         display: inline-flex;
     }
-    .tab {
+    #tabs .tab {
         min-width: 160px;
     }
 }
 @media (max-width: 575.98px) {
 
-    .tabs__wrap-tags {
+    #tabs .tabs__wrap-tags {
         display: flex;
     }
-    .tab {
+    #tabs .tab {
         width: 50%;
     }
-    .tabContent {
+    #tabs .tabContent {
         padding-top: 4px;
     }
 }
