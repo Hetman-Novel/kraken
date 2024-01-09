@@ -4,14 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240108235914">
-   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20240108235914">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240108235914">
-   <!--<link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20240108235914">-->
-   <!--<link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20240108235914">-->
-   <link rel="stylesheet" href="files/tabs/tabs.css?_v=20240108235914">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240108235914">
-   <link rel="stylesheet" href="files/site-color/site-color.css?_v=20240108235914">
+   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240110004012">
+   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20240110004012">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240110004012">
+   <!--<link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20240110004012">-->
+   <!--<link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20240110004012">-->
+   <link rel="stylesheet" href="files/tabs/tabs.css?_v=20240110004012">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240110004012">
+   <link rel="stylesheet" href="files/site-color/site-color.css?_v=20240110004012">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Home - Kraken Casino</title>
 </head>
@@ -82,14 +82,14 @@
                               Achievements
                               <span class="label">New</span>
                            </a>
-                           <a class="hidden-menu__first-link lucky-spin" href="#">
+                           <a id="lucky-spin" class="hidden-menu__first-link lucky-spin popup-link" href="#wheel-of-fortune">
                               <span class="wrap-img">
                                  <img src="images/lucky-spin-icon.png" alt="">
                               </span>
                               Lucky Spin
                               <span class="label">New</span>
                            </a>
-                           <a class="hidden-menu__first-link shop" href="#">
+                           <a id="slot-machine-link" class="hidden-menu__first-link shop slot-machine popup-link" href="#slot-machine">
                               <span class="wrap-img">
                                  <img src="images/slot-machine-icon.png" alt="">
                               </span>
@@ -196,8 +196,6 @@
    </div>
 </header>
 
-
-
 <div class="bottom-panel">
    <div class="bottom-panel__items">
       <div class="bottom-panel__item">
@@ -244,6 +242,423 @@
             </span>
             Support
          </a>
+      </div>
+   </div>
+</div>
+
+<div id="wheel-of-fortune" class="popup achievements__popup wheel-of-fortune-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <h2>
+            <span class="desktop">Spin the Lucky Wheel every day to collect your free coins</span>
+            <span class="mobile">Lucky Spin</span>
+         </h2>
+         <div class="tabs__wrap-tags">
+            <a href="#slot-machine" class="tab popup-link">Slot Machine</a>
+            <a href="#wheel-of-fortune" class="tab tab-active popup-link">Lucky Wheel</a>
+         </div>
+         <div class="wheel-of-fortune-popup__block-baraban">
+            <img class="wheel-of-fortune-popup__frame" src="images/frame.png" alt="">
+            <img class="wheel-of-fortune-popup__baraban js-wheel-of-fortune" src="images/baraban.png" alt="">
+            <img class="wheel-of-fortune-popup__central-circle-baraban" src="images/central-circle-baraban.png" alt="">
+         </div>
+         <button type="button" class="achievements__popup-button js-btn-start-rotating">Обертати!</button>
+         <p class="wheel-of-fortune-popup__text-under-button">У вас є 1 безкоштовне обертання!</p>
+         <div class="popup__close close-popup">
+            <img src="images/svg/close-pop-up.svg" alt="" class="dekstop">
+            <img src="images/svg/close-pop-up-mobile.svg" alt="" class="mobile">
+         </div>
+         <div class="achievements__popup-block-image">
+            <img class="achievements__popup-bg desktop" src="images/wheel-of-fortune-popup-content-bg.png" alt="">
+            <img class="achievements__popup-bg mobile" src="images/wheel-of-fortune-popup-content-bg-mobile.jpg" alt="">
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="slot-machine" class="popup achievements__popup slot-machine-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#slot-machine-combinations" class="popup-link"><img src="images/icons/info-icon.png" alt="" class="desktop"><img src="images/icons/info-mobile-icon.png" alt="" class="mobile">Комбинации</a>
+         <div class="tabs__wrap-tags">
+            <a href="#slot-machine" class="tab tab-active popup-link">Slot Machine</a>
+            <a href="#wheel-of-fortune" class="tab popup-link">Lucky Wheel</a>
+         </div>
+         <h2>Welcome to the <span>Lucky</span> Wheel</h2>
+         <h3>Grand Jackpot</h3>
+         <p>5,555 UAH</p>
+         <div class="popup__close close-popup">
+            <img src="images/icons/close-popup-icon.png" alt="" class="dekstop">
+            <img src="images/svg/close-pop-up-mobile.svg" alt="" class="mobile">
+         </div>
+         <button type="button" class="slot-machine-popup__play">
+            <img src="images/icons/slot-machine-popup-play.png" alt="">
+         </button>
+         <div class="slot-machine-popup__elements">
+            <div class="slot-machine-popup__element">
+               <div class="slot-machine-popup__columns">
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-1.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-1.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-4.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-5.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-4.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="slot-machine-popup__element">
+               <div class="slot-machine-popup__columns">
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-1.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-5.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-4.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-3.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-2.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="slot-machine-popup__element">
+               <div class="slot-machine-popup__columns">
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-1.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-4.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-4.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-5.png" alt="">
+                  </div>
+                  <div class="slot-machine-popup__column">
+                     <img src="images/icons/slot-machine-popup-element-2.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--<div class="block-machine">
+            <img src="images/machine.png" alt="" class="machine">
+         </div>-->
+         <div class="achievements__popup-block-image">
+            <img class="achievements__popup-bg desktop" src="images/slot-machine-popup-content-bg.jpg" alt="">
+            <img class="achievements__popup-bg mobile" src="images/slot-machine-popup-content-bg-mobile.png" alt="">
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="slot-machine-combinations" class="popup slot-machine-combinations-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <div class="for-scroll">
+            <h2>Комбинации</h2>
+            <div class="slot-machine-combinations-popup__items">
+               <div class="slot-machine-combinations-popup__item">
+                  <h3>Уменьшение вейджера</h3>
+                  <div class="slot-machine-combinations-popup__columns">
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x10-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="slot-machine-combinations-popup__item">
+                  <h3>Бездепозитный бонус</h3>
+                  <div class="slot-machine-combinations-popup__columns">
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x150-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x50-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x50-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crown-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x50-icon.png" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="slot-machine-combinations-popup__item">
+                  <h3>Уменьшение вейджера</h3>
+                  <div class="slot-machine-combinations-popup__columns">
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x10-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="slot-machine-combinations-popup__item">
+                  <h3>Уменьшение вейджера</h3>
+                  <div class="slot-machine-combinations-popup__columns">
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x10-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/question-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/crystal-icon.png" alt="">
+                     </div>
+                     <div class="slot-machine-combinations-popup__column">
+                        <img src="images/icons/equals-icon.png" alt="">
+                     </div>
+                     <a href="#wager-reduction" class="slot-machine-combinations-popup__column popup-link">
+                        <img src="images/icons/x5-icon.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="popup__close close-popup">
+               <img src="images/svg/close-pop-up.svg" alt="" class="dekstop">
+               <img src="images/svg/close-pop-up-mobile.svg" alt="" class="mobile">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="wager-reduction" class="popup achievements__popup wager-reduction-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <h2>Вітаємо!</h2>
+         <div class="achievements__popup-block-icon">
+            <img src="images/icons/x5-wager-popup-icon.png" alt="">
+         </div>
+         <h3>Уменьшение вейджера x10</h3>
+         <p class="wheel-of-fortune-popup__text-under-button">Використати бонус до: <span>23:59 28.12.2023</span></p>
+         <a href="#" class="achievements__popup-button for-gifts">Перейти до подарунків</a>
+         <a href="#wheel-of-fortune" class="achievements__popup-button popup-link">Обертати!</a>
+         <div class="popup__close close-popup">
+            <img src="images/svg/close-pop-up.svg" alt="" class="dekstop">
+            <img src="images/svg/close-pop-up-mobile.svg" alt="" class="mobile">
+         </div>
+         <div class="achievements__popup-block-image">
+            <img class="achievements__popup-bg desktop" src="images/wager-reduction-popup-content-bg.png" alt="">
+            <img class="achievements__popup-bg mobile" src="images/wager-reduction-popup-content-bg-mobile.png" alt="">
+         </div>
       </div>
    </div>
 </div>
@@ -430,17 +845,21 @@
 
    </div>
 
-   <script src="js/script.min.js?_v=20240108235914"></script>
+   <script src="js/script.min.js?_v=20240110004012"></script>
+   <script src="files/tabs/tabs.js?_v=20240110004012"></script>
+   <script src="files/js/pop-up.js?_v=20240110004012"></script>
 
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240108235914"></script>-->
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240110004012"></script>-->
 
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240108235914"></script>
-   <script src="files/swiper/js/settings.js?_v=20240108235914"></script>
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20240110004012"></script>
+   <script src="files/swiper/js/settings.js?_v=20240110004012"></script>
 
-   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240108235914"></script>
+   <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240110004012"></script>
 
-   <script src="files/custom-select/custom-select.js?_v=20240108235914"></script>
-   <script src="files/site-color/site-color.js?_v=20240108235914"></script>
+   <script src="files/custom-select/custom-select.js?_v=20240110004012"></script>
+   <script src="files/site-color/site-color.js?_v=20240110004012"></script>
+
+   <script src="files/js/demo.js?_v=20240110004012"></script>
 
 </body>
 </html>

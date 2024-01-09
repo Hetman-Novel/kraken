@@ -3,7 +3,7 @@
     background-color: #1C1F3E;
     padding: 4px;
 }
-#tabs .tab {
+.tab {
     align-items: center;
     color: #8C90CA;
     cursor: pointer;
@@ -14,7 +14,7 @@
     padding: 0 12px;
     text-align: center;
 }
-#tabs .tab-active {
+.tab-active {
     border-radius: 8px;
     background-color: #2B2F5B;
     color: #fff;
@@ -34,7 +34,7 @@
     .tabs__wrap-tags {
         display: inline-flex;
     }
-    #tabs .tab {
+    .tab {
         min-width: 160px;
     }
 }
@@ -43,10 +43,10 @@
     .tabs__wrap-tags {
         display: flex;
     }
-    #tabs .tab {
+    .tab {
         width: 50%;
     }
-    #tabs .tabContent {
+    .tabContent {
         padding-top: 4px;
     }
 }
