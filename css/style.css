@@ -28,6 +28,14 @@
 
 @font-face {
   font-family: "Gotham Pro";
+  src: url("../files/fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"), url("../files/fonts/GothamPro/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
   src: url("../files/fonts/GothamPro/GothamPro-MediumItalic.woff2") format("woff2"), url("../files/fonts/GothamPro/GothamPro-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
@@ -1391,31 +1399,6 @@ body.lock {
   margin: 15px 0 0;
 }
 
-/*
-#tabs .tabs__wrap-tags {
-    border-radius: 12px;
-    background-color: #1C1F3E;
-    padding: 4px;
-}
-#tabs .tab {
-    align-items: center;
-    color: #8C90CA;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    height: 36px;
-    line-height: 14px;
-    padding: 0 12px;
-    text-align: center;
-}
-#tabs .tab-active {
-    border-radius: 8px;
-    background-color: #2B2F5B;
-    color: #fff;
-    pointer-events: none;
-}
-*/
-
 .popup .tabs {
   border-radius: 12px;
   background-color: #1C1F3E;
@@ -1694,12 +1677,6 @@ body.lock {
   margin-right: 4px;
   position: relative;
   width: calc(20% - 8px);
-  /*&::nth-child(5n+4) img {
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-     }*/
 }
 
 .slot-machine-combinations-popup__column:not(.popup-link) {
@@ -1707,6 +1684,10 @@ body.lock {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.slot-machine-combinations-popup__column img.for-light {
+  display: none;
 }
 
 .wager-reduction-popup .popup__content {
@@ -2355,6 +2336,22 @@ a {
   height: 24px;
 }
 
+.bottom-panel__wrap-icon svg {
+  transition: 0.3s ease 0s;
+}
+
+.bottom-panel__wrap-icon svg:not(.support) path {
+  fill: #fff;
+}
+
+.bottom-panel__wrap-icon svg.support path:nth-child(1) {
+  stroke: #fff;
+}
+
+.bottom-panel__wrap-icon svg.support path:nth-child(2) {
+  fill: #fff;
+}
+
 /* Page - Home */
 
 .home-slider {
@@ -2901,7 +2898,8 @@ a {
 .achievements__popup-progress-bar {
   border-radius: 6px;
   background-color: #2B2F5B;
-  height: 12px;
+  min-height: 12px;
+  max-height: 12px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -2917,9 +2915,8 @@ a {
   height: 100%;
   font-size: 10px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 12px;
   padding-right: 5px;
-  padding-top: 1.5px;
   text-align: right;
   transition: width 0.8s ease 0s;
   width: 0;
@@ -3420,6 +3417,328 @@ a {
 
 /* Plyr video player */
 
+html.dark .header__blockLogo .for-light {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+html.dark .header__blockLogo .for-dark {
+  opacity: 1;
+  position: static;
+}
+
+html.light .header__blockLogo .for-dark {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+html.light .header__blockLogo .for-light {
+  opacity: 1;
+  position: static;
+}
+
+.header__blockLogo img {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease 0s;
+  top: 0;
+}
+
+html.light body,
+html.light .page__head-block-wrap-price p,
+html.light .slot-machine-combinations-popup .popup__content h1,
+html.light .slot-machine-combinations-popup .popup__content h2,
+html.light .slot-machine-combinations-popup .popup__content h3,
+html.light .slot-machine-combinations-popup .popup__content h4,
+html.light .slot-machine-combinations-popup .popup__content h5,
+html.light .slot-machine-combinations-popup .popup__content h6,
+html.light .shop-block-info .popup__content h1,
+html.light .shop-block-info .popup__content h2,
+html.light .shop-block-info .popup__content h3,
+html.light .shop-block-info .popup__content h4,
+html.light .shop-block-info .popup__content h5,
+html.light .shop-block-info .popup__content h6,
+html.light .my-tasks__block-task.done.received .my-tasks__block-wrap-reward p {
+  color: #000;
+}
+
+html.light body,
+html.light .header__container,
+html.light .bottom-panel,
+html.light .slot-machine-combinations-popup .popup__content,
+html.light .shop-block-info .popup__content,
+html.light .hidden-menu__content {
+  background-color: #f9f9f9 !important;
+}
+
+html.light .hidden-menu__first-head {
+  background-color: #D2D3EA;
+}
+
+html.light .bottom-panel::before {
+  background-color: #E9E9E9;
+  content: "";
+  left: 0;
+  display: block;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 100%;
+}
+
+html.light .bottom-panel__item a {
+  font-weight: 500;
+}
+
+html.light .bottom-panel__wrap-icon {
+  display: block;
+  height: 24px;
+}
+
+html.light .bottom-panel__wrap-icon svg {
+  transition: 0.3s ease 0s;
+}
+
+html.light .bottom-panel__wrap-icon svg:not(.support) path {
+  fill: #262756;
+}
+
+html.light .bottom-panel__wrap-icon svg.support path:nth-child(1) {
+  stroke: #262756;
+}
+
+html.light .bottom-panel__wrap-icon svg.support path:nth-child(2) {
+  fill: #262756;
+}
+
+html.light .header__buttons .login,
+html.light .hidden-menu__first-links a,
+html.light .shop__block-wrap-bottom.my-bonuses p:first-child,
+html.light .shop__block-wrap-bottom p,
+html.light .shop__block-wrap-bottom.my-bonuses a,
+html.light .shop__block-circle h1,
+html.light .shop__block-circle h2,
+html.light .shop__block-circle h3,
+html.light .shop__block-circle h4,
+html.light .shop__block-circle h5,
+html.light .shop__block-circle h6,
+html.light .shop__block-circle p,
+html.light .slot-machine-popup .popup__content .popup-link {
+  color: #fff;
+}
+
+html.light .hidden-menu__first-wrap-phone p,
+html.light .hidden-menu__first-block-price p:first-child {
+  color: #29327D;
+}
+
+html.light .hidden-menu__first-block-phone,
+html.light .hidden-menu__list {
+  border-color: #C6C8E8;
+}
+
+html.light .hidden-menu__first-wrap-phone a,
+html.light .hidden-menu__first-price p,
+html.light .hidden-menu__list li a {
+  color: #000 !important;
+}
+
+html.light .home-slider-pagination .swiper-pagination-bullet-active {
+  background-color: #1C1F3E;
+}
+
+html.light .home__items,
+html.light .home__wrap-field,
+html.light .home__wrap-field .custom-select .custom-select__body,
+html.light .home__all-slots,
+html.light .hidden-menu .custom-select .custom-select__body {
+  border: 1px solid #E9E9E9;
+  background-color: #fff;
+}
+
+html.light .my-tasks__block-task.done.received .my-tasks__block-wrap-reward,
+html.light .my-tasks__block-task.done.received {
+  border-radius: 8px;
+  border: 2px solid #F3F3FB;
+  background-color: #fff;
+}
+
+html.light .my-tasks__block-task.no-bg-color.done.received .my-tasks__block-task-wrap-circle {
+  background: #D2D3EA;
+}
+
+html.light .my-tasks__block-task:not(.done),
+html.light .my-tasks__block-task.no-bg-color {
+  background: #F3F3FB;
+  border: none;
+}
+
+html.light .my-tasks__block-task:not(.done) .my-tasks__block-wrap-reward,
+html.light .my-tasks__block-task.done.received .my-tasks__block-wrap-reward {
+  background: #D2D3EA;
+  border: none;
+}
+
+html.light .my-tasks__block-task.done.received .my-tasks__block-wrap-reward img {
+  opacity: 1;
+}
+
+html.light .home__items li:not(:last-child)::after,
+html.light .my-tasks__block-task.no-bg-color.done .my-tasks__block-task-wrap-circle,
+html.light .my-tasks__block-task.no-bg-color .my-tasks__block-task-wrap-circle,
+html.light .my-tasks__block-task.done.received .my-tasks__block-task-wrap-circle {
+  background: #E9E9E9;
+}
+
+html.light .my-tasks__block-task:not(.done) .my-tasks__block-task-wrap-circle {
+  background: #D2D3EA;
+}
+
+html.light .my-tasks__block-task:not(.done) .my-tasks__block-task-wrap-circle p {
+  color: #29327D;
+}
+
+html.light .my-tasks__block-task:not(.done) .my-tasks__block-task-wrap-circle,
+html.light .my-tasks__block-task.no-bg-color .my-tasks__block-task-wrap-circle,
+html.light .my-tasks__block-task.done.received .my-tasks__block-task-wrap-circle {
+  border: 4px solid #fff;
+  outline: 4px solid #D2D3EA;
+}
+
+html.light .hidden-menu__list li a,
+html.light .home__items li a,
+html.light .home__wrap-field input,
+html.light .custom-select__placeholder,
+html.light .custom-select__tag-selected,
+html.light .home__all-slots,
+html.light .shop__block-wrap-bottom.my-bonuses a,
+html.light .no-bonuses__link,
+html.light .my-tasks__block-task-wrap-circle p,
+html.light .page__head-block-wrap-price p,
+html.light .slot-machine-combinations-popup__item h1,
+html.light .slot-machine-combinations-popup__item h2,
+html.light .slot-machine-combinations-popup__item h3,
+html.light .slot-machine-combinations-popup__item h4,
+html.light .slot-machine-combinations-popup__item h5,
+html.light .slot-machine-combinations-popup__item h6,
+html.light .shop-block-info .popup__content h2,
+html.light .shop-block-info .popup__content h3,
+html.light .shop-block-info .popup__content h4,
+html.light .shop-block-info .popup__content h5,
+html.light .shop-block-info .popup__content h6,
+html.light .hidden-menu__first-price p,
+html.light .hidden-menu__first-wrap-phone p,
+html.light .hidden-menu__first-block-price p:first-child,
+html.light .hidden-menu__first-wrap-phone {
+  font-weight: 500 !important;
+}
+
+html.light .home__wrap-field input {
+  color: #262756;
+}
+
+html.light .home__wrap-field input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+html.light .home__wrap-field input::placeholder {
+  opacity: 0.5;
+}
+
+html.light .custom-select__placeholder {
+  color: #262756;
+}
+
+html.light .custom-select .custom-select__body {
+  border-top: none;
+}
+
+html.light .popup .tabs,
+html.light .tabs__wrap-tags {
+  background-color: #D2D3EA !important;
+}
+
+html.light .popup .tabs .tabs__tab,
+html.light .popup .tabs .tab,
+html.light .tabs__wrap-tags .tabs__tab,
+html.light .tabs__wrap-tags .tab {
+  color: #8186BD !important;
+  font-weight: 500;
+}
+
+html.light .popup .tabs .tabs__tab.active,
+html.light .popup .tabs .tabs__tab.tab-active,
+html.light .popup .tabs .tab.active,
+html.light .popup .tabs .tab.tab-active,
+html.light .tabs__wrap-tags .tabs__tab.active,
+html.light .tabs__wrap-tags .tabs__tab.tab-active,
+html.light .tabs__wrap-tags .tab.active,
+html.light .tabs__wrap-tags .tab.tab-active {
+  background-color: #F3F3FB !important;
+  color: #29327D !important;
+}
+
+html.light .slot-machine-combinations-popup__column img.for-dark {
+  display: none;
+}
+
+html.light .slot-machine-combinations-popup__column img.for-light {
+  display: block;
+}
+
+html.light .hidden-menu__list li.live-games-icon::before {
+  content: url("../images/icons/live-games-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.table-games-icon::before {
+  content: url("../images/icons/table-games-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.vr-sport-icon::before {
+  content: url("../images/icons/vr-sport-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.tvbet-icon::before {
+  content: url("../images/icons/tvbet-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.favorites-icon::before {
+  content: url("../images/icons/favorites-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.hall-of-fame-icon::before {
+  content: url("../images/icons/hall-of-fame-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.for-partners-icon::before {
+  content: url("../images/icons/for-partners-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.referral-system-icon::before {
+  content: url("../images/icons/referral-system-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.tournaments-icon::before {
+  content: url("../images/icons/tournaments-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.bonuses-icon::before {
+  content: url("../images/icons/bonuses-icon-for-light.png");
+}
+
+html.light .hidden-menu__list li.news-icon::before {
+  content: url("../images/icons/news-icon-for-light.png");
+}
+
+html.light .achievements__name {
+  color: #000;
+}
+
 @media screen and (min-width: 401px) {
   .wheel-of-fortune-popup__text-under-button span {
     color: #fff;
@@ -3657,6 +3976,15 @@ a {
   #map {
     min-height: 400px;
     height: 100%;
+  }
+
+  html.light .shop-block-info .popup__wrap-text::-webkit-scrollbar-thumb {
+    background-color: #262756;
+    opacity: 1;
+  }
+
+  html.light .achievements__block {
+    background-color: #F3F3FB;
   }
 }
 
@@ -4343,6 +4671,15 @@ a {
   .footer__wrap-btn {
     align-items: center;
     margin-top: 2px;
+  }
+
+  html.light .achievements__name {
+    color: #262756;
+    font-weight: 700;
+  }
+
+  html.light .header__block-price p {
+    font-weight: 500;
   }
 }
 

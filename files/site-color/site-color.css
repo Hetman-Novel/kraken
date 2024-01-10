@@ -12,7 +12,7 @@ html.dark body {
     background-color: #181A32;
 }
 html.light body {
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 html.dark .page__action {
     
