@@ -49,15 +49,19 @@ html.light .preloader__overlay {
 html.dark .preloader__wrap-logo .letter {
     fill: #EAEAEA;
 }
+/*
 html.dark .preloader__wrap-logo .element {
-    //fill: #FF7900;
+    fill: #FF7900;
 }
+*/
 html.light .preloader__wrap-logo .letter {
     fill: #262756;
 }
+/*
 html.light .preloader__wrap-logo .element {
-    //fill: #FF7900;
+    fill: #FF7900;
 }
+*/
 .preloader__overlay {
     bottom: 0;
     height: 100%;
