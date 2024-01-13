@@ -37,3 +37,20 @@ if (home_slider) {
       }
    })
 }
+
+if (window.matchMedia("(max-width: 575.98px)").matches) {
+
+   const tourney_games_slider = document.querySelector('.tourney-games-slider')
+   if (tourney_games_slider) {
+      new Swiper(tourney_games_slider, {
+         slidesPerView: 2.4,
+         grid: {
+            rows: 3,
+         },
+         //spaceBetween: 8,
+         preloadImages: true,
+         lazy: true
+      })
+   }
+
+}

@@ -12,10 +12,10 @@
    <link rel="stylesheet" href="css/style.min.css?_v=20240113203304">
    <link rel="stylesheet" href="files/site-color/site-color.css?_v=20240113203304">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <title>Home - Kraken Casino</title>
+   <title>Турниры - Kraken Casino</title>
 </head>
 
-<body>
+<body class="tourney">
    <div class="wrapper">
       <header class="header">
    <div class="header__wrapper lock-padding">
@@ -711,171 +711,461 @@
    </div>
 </div>
 <script src="files/preloader/preloader.js?_v=20240113203304"></script>
-      <div class="page__head"></div>
+      <div class="page__head">
+         <div class="n_container">
+            <div class="page__block-go-back-to-mome">
+               <img src="images/svg/go-back-to-mome-icon.svg" alt="">
+               <a href="/">До всіх турнірів</a>
+            </div>
+         </div>
+      </div>
       <main class="main">
          <div class="n_container">
-            <div class="home-slider swiper-conteiner">
-               <div class="swiper-wrapper">
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="images/home-slide-1.jpg" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="https://picsum.photos/id/294/1170/336" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="https://picsum.photos/id/214/1170/336" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="https://picsum.photos/id/221/1170/336" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="https://picsum.photos/id/479/1170/336" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-                  <div class="home-slider__slide swiper-slide">
-                     <div class="home-slider__block-image">
-                        <img loading="lazy" src="https://picsum.photos/id/235/1170/336" alt="">
-                        <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="home-slider-pagination swiper-pagination"></div>
+            <div class="tourney__block-image">
+               <picture>
+                  <source media="(min-width: 576px)" srcset="images/tourney-big-image.jpg">
+                  <source media="(max-width: 575.98px)" srcset="images/tourney-big-image-mobile.png">
+                  <img src="images/tourney-big-image.jpg" alt="">
+               </picture>
             </div>
-         </div>
-         <div class="home__wrap-items">
-            <div class="n_container">
-               <div class="home__wrap-list">
-                  <ul class="home__items">
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-new.svg" alt="">
-                        </span>
-                        <a href="#">New</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-crash-games.svg" alt="">
-                        </span>
-                        <a href="#">Crash Games</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-top.svg" alt="">
-                        </span>
-                        <a href="#">Top</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-hot.svg" alt="">
-                        </span>
-                        <a href="#">Hot</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-jackpot.svg" alt="">
-                        </span>
-                        <a href="#">Jackpot</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-megaways.svg" alt="">
-                        </span>
-                        <a href="#">Megaways</a>
-                     </li>
-                     <li>
-                        <span class="wrap-icon">
-                           <img src="images/svg/home-items-icon-fs.svg" alt="">
-                        </span>
-                        <a href="#">FS</a>
-                     </li>
-                  </ul>
+            <div class="tourney__columns">
+               <div class="tourney__column">
+                  <div class="tourney__column-head">
+                     <div class="tourney__column-block-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                           <path d="M13.25 2H11.75V1.5C11.75 1.36739 11.6973 1.24021 11.6036 1.14645C11.5098 1.05268 11.3826 1 11.25 1C11.1174 1 10.9902 1.05268 10.8964 1.14645C10.8027 1.24021 10.75 1.36739 10.75 1.5V2H5.75V1.5C5.75 1.36739 5.69732 1.24021 5.60355 1.14645C5.50979 1.05268 5.38261 1 5.25 1C5.11739 1 4.99021 1.05268 4.89645 1.14645C4.80268 1.24021 4.75 1.36739 4.75 1.5V2H3.25C2.98478 2 2.73043 2.10536 2.54289 2.29289C2.35536 2.48043 2.25 2.73478 2.25 3V13C2.25 13.2652 2.35536 13.5196 2.54289 13.7071C2.73043 13.8946 2.98478 14 3.25 14H13.25C13.5152 14 13.7696 13.8946 13.9571 13.7071C14.1446 13.5196 14.25 13.2652 14.25 13V3C14.25 2.73478 14.1446 2.48043 13.9571 2.29289C13.7696 2.10536 13.5152 2 13.25 2ZM4.75 3V3.5C4.75 3.63261 4.80268 3.75979 4.89645 3.85355C4.99021 3.94732 5.11739 4 5.25 4C5.38261 4 5.50979 3.94732 5.60355 3.85355C5.69732 3.75979 5.75 3.63261 5.75 3.5V3H10.75V3.5C10.75 3.63261 10.8027 3.75979 10.8964 3.85355C10.9902 3.94732 11.1174 4 11.25 4C11.3826 4 11.5098 3.94732 11.6036 3.85355C11.6973 3.75979 11.75 3.63261 11.75 3.5V3H13.25V5H3.25V3H4.75ZM13.25 13H3.25V6H13.25V13Z" fill="#8C90CA"/>
+                        </svg>
+                     </div>
+                     <p>Срок действия турнира</p>
+                  </div>
+                  <p><time datetime="2024-01-18 19:00">18.01.2024 - 22.01.2024</time></p>
                </div>
-               <div data-da="n_container-second, first, 900" class="home__fields">
-                  <form class="home__wrap-field">
-                     <button type="submit">
-                        <img src="images/svg/search-icon.svg" alt="">
-                     </button>
-                     <input type="text" placeholder="Find game...">
-                  </form>
-                  <div class="home__wrap-field">
-                     <img src="images/svg/home-before-select-icon.svg" alt="">
-                     <div class="custom-select js-custom-select">
-                        <input class="custom-select__value" type="hidden" name="slot" value="0">
-                        <div class="custom-select__selected">
-                           <p class="custom-select__placeholder">All Providers</p>
+               <div class="tourney__column">
+                  <div class="tourney__column-head">
+                     <div class="tourney__column-block-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                           <path d="M13.75 4.50002H11.5575C11.5819 4.47939 11.6069 4.45939 11.6306 4.43752C11.8204 4.26888 11.9734 4.06289 12.08 3.83243C12.1866 3.60196 12.2444 3.35199 12.25 3.09814C12.2582 2.82044 12.2096 2.54399 12.1071 2.28576C12.0046 2.02753 11.8504 1.79298 11.654 1.5965C11.4575 1.40002 11.223 1.24575 10.9648 1.14318C10.7066 1.04061 10.4302 0.991891 10.1525 1.00002C9.89855 1.00549 9.64845 1.06332 9.41788 1.1699C9.1873 1.27647 8.98121 1.4295 8.8125 1.61939C8.57905 1.88995 8.38927 2.19529 8.25 2.52439C8.11073 2.19529 7.92095 1.88995 7.6875 1.61939C7.51879 1.4295 7.3127 1.27647 7.08212 1.1699C6.85155 1.06332 6.60146 1.00549 6.3475 1.00002C6.06979 0.991891 5.79336 1.04061 5.53516 1.14318C5.27696 1.24575 5.04245 1.40002 4.84603 1.5965C4.64961 1.79298 4.49542 2.02753 4.39292 2.28576C4.29043 2.54399 4.24179 2.82044 4.25 3.09814C4.25556 3.35199 4.31343 3.60196 4.42 3.83243C4.52658 4.06289 4.67956 4.26888 4.86938 4.43752C4.89313 4.45814 4.91813 4.47814 4.9425 4.50002H2.75C2.48478 4.50002 2.23043 4.60538 2.04289 4.79291C1.85536 4.98045 1.75 5.2348 1.75 5.50002V7.50002C1.75 7.76523 1.85536 8.01959 2.04289 8.20712C2.23043 8.39466 2.48478 8.50002 2.75 8.50002V12.5C2.75 12.7652 2.85536 13.0196 3.04289 13.2071C3.23043 13.3947 3.48478 13.5 3.75 13.5H12.75C13.0152 13.5 13.2696 13.3947 13.4571 13.2071C13.6446 13.0196 13.75 12.7652 13.75 12.5V8.50002C14.0152 8.50002 14.2696 8.39466 14.4571 8.20712C14.6446 8.01959 14.75 7.76523 14.75 7.50002V5.50002C14.75 5.2348 14.6446 4.98045 14.4571 4.79291C14.2696 4.60538 14.0152 4.50002 13.75 4.50002ZM9.5625 2.28189C9.64167 2.19447 9.73805 2.12436 9.84561 2.07596C9.95316 2.02756 10.0696 2.00191 10.1875 2.00064H10.2181C10.3564 2.00151 10.493 2.02995 10.6201 2.08431C10.7472 2.13867 10.8622 2.21785 10.9583 2.31722C11.0544 2.41658 11.1297 2.53412 11.1798 2.66296C11.2299 2.7918 11.2537 2.92934 11.25 3.06752C11.2487 3.18545 11.2231 3.30185 11.1747 3.40941C11.1263 3.51696 11.0562 3.61335 10.9688 3.69252C10.3756 4.21752 9.39125 4.40252 8.78125 4.46752C8.85625 3.80564 9.0625 2.84377 9.5625 2.28189ZM5.55688 2.30439C5.75059 2.1107 6.01294 2.00131 6.28687 2.00002H6.3175C6.43544 2.00129 6.55184 2.02693 6.65939 2.07533C6.76695 2.12373 6.86333 2.19384 6.9425 2.28127C7.46688 2.87377 7.65188 3.85627 7.71688 4.46377C7.10938 4.40127 6.12687 4.21377 5.53438 3.68939C5.44695 3.61023 5.37684 3.51384 5.32844 3.40628C5.28004 3.29873 5.2544 3.18233 5.25313 3.06439C5.24925 2.92391 5.27395 2.78411 5.32574 2.65347C5.37752 2.52283 5.45531 2.40407 5.55438 2.30439H5.55688ZM2.75 5.50002H7.75V7.50002H2.75V5.50002ZM3.75 8.50002H7.75V12.5H3.75V8.50002ZM12.75 12.5H8.75V8.50002H12.75V12.5ZM13.75 7.50002H8.75V5.50002H13.75V7.50002Z" fill="#8C90CA"/>
+                        </svg>
+                     </div>
+                     <p>Призовой фонд</p>
+                  </div>
+                  <p>$45,000</p>
+               </div>
+               <div class="tourney__column">
+                  <div class="tourney__column-head">
+                     <div class="tourney__column-block-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                           <g clip-path="url(#tourney-icon-three)">
+                              <path d="M11.75 5.59812V5.25C11.75 3.6825 9.38562 2.5 6.25 2.5C3.11438 2.5 0.75 3.6825 0.75 5.25V7.75C0.75 9.05562 2.39062 10.0931 4.75 10.4038V10.75C4.75 12.3175 7.11438 13.5 10.25 13.5C13.3856 13.5 15.75 12.3175 15.75 10.75V8.25C15.75 6.95625 14.1613 5.9175 11.75 5.59812ZM14.75 8.25C14.75 9.07625 12.8256 10 10.25 10C10.0169 10 9.78562 9.99188 9.5575 9.97688C10.9056 9.48563 11.75 8.6875 11.75 7.75V6.60875C13.6169 6.88687 14.75 7.64188 14.75 8.25ZM4.75 9.39062V7.90375C5.24736 7.96856 5.74843 8.00071 6.25 8C6.75157 8.00071 7.25264 7.96856 7.75 7.90375V9.39062C7.25338 9.46399 6.75201 9.50055 6.25 9.5C5.74799 9.50055 5.24662 9.46399 4.75 9.39062ZM10.75 6.87063V7.75C10.75 8.27437 9.97437 8.8375 8.75 9.17937V7.71875C9.55688 7.52313 10.24 7.23187 10.75 6.87063ZM6.25 3.5C8.82562 3.5 10.75 4.42375 10.75 5.25C10.75 6.07625 8.82562 7 6.25 7C3.67438 7 1.75 6.07625 1.75 5.25C1.75 4.42375 3.67438 3.5 6.25 3.5ZM1.75 7.75V6.87063C2.26 7.23187 2.94313 7.52313 3.75 7.71875V9.17937C2.52562 8.8375 1.75 8.27437 1.75 7.75ZM5.75 10.75V10.4894C5.91437 10.4956 6.08063 10.5 6.25 10.5C6.4925 10.5 6.72937 10.4919 6.96187 10.4781C7.22016 10.5706 7.48325 10.649 7.75 10.7131V12.1794C6.52563 11.8375 5.75 11.2744 5.75 10.75ZM8.75 12.3906V10.9C9.2472 10.9668 9.74833 11.0002 10.25 11C10.7516 11.0007 11.2526 10.9686 11.75 10.9038V12.3906C10.7553 12.5365 9.74468 12.5365 8.75 12.3906ZM12.75 12.1794V10.7188C13.5569 10.5231 14.24 10.2319 14.75 9.87062V10.75C14.75 11.2744 13.9744 11.8375 12.75 12.1794Z" fill="#8C90CA"/>
+                           </g>
+                           <defs>
+                              <clipPath id="tourney-icon-three">
+                                 <rect width="16" height="16" fill="white" transform="translate(0.25)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <p>Минимальная ставка</p>
+                  </div>
+                  <p>$0.2</p>
+               </div>
+               <div class="tourney__column">
+                  <div class="tourney__column-head">
+                     <div class="tourney__column-block-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                           <path d="M14.75 8.00003C14.7501 9.57746 14.1291 11.0915 13.0212 12.2144C11.9134 13.3373 10.4079 13.9788 8.83062 14H8.75C7.21765 14.0038 5.74268 13.4174 4.63125 12.3625C4.58352 12.3174 4.54515 12.2633 4.51833 12.2033C4.49152 12.1433 4.47677 12.0787 4.47494 12.013C4.47311 11.9473 4.48424 11.882 4.50768 11.8206C4.53112 11.7592 4.56642 11.7031 4.61156 11.6553C4.6567 11.6076 4.7108 11.5692 4.77077 11.5424C4.83074 11.5156 4.89541 11.5009 4.96108 11.499C5.02675 11.4972 5.09213 11.5083 5.1535 11.5318C5.21487 11.5552 5.27102 11.5905 5.31875 11.6357C6.03362 12.3098 6.9313 12.7584 7.89964 12.9254C8.86799 13.0924 9.86406 12.9703 10.7634 12.5745C11.6628 12.1786 12.4256 11.5265 12.9565 10.6997C13.4875 9.87285 13.763 8.90789 13.7487 7.92537C13.7344 6.94284 13.4309 5.9863 12.8762 5.17525C12.3214 4.36421 11.54 3.7346 10.6294 3.36509C9.71893 2.99558 8.71973 2.90255 7.75665 3.09762C6.79358 3.29269 5.90933 3.76721 5.21438 4.4619C5.20927 4.46743 5.20384 4.47264 5.19812 4.47753L3.53688 6.00003H5.25C5.38261 6.00003 5.50979 6.05271 5.60355 6.14647C5.69732 6.24024 5.75 6.36742 5.75 6.50003C5.75 6.63264 5.69732 6.75981 5.60355 6.85358C5.50979 6.94735 5.38261 7.00003 5.25 7.00003H2.25C2.11739 7.00003 1.99021 6.94735 1.89645 6.85358C1.80268 6.75981 1.75 6.63264 1.75 6.50003V3.50003C1.75 3.36742 1.80268 3.24024 1.89645 3.14647C1.99021 3.05271 2.11739 3.00003 2.25 3.00003C2.38261 3.00003 2.50979 3.05271 2.60355 3.14647C2.69732 3.24024 2.75 3.36742 2.75 3.50003V5.36253L4.51562 3.75003C5.35561 2.9133 6.42467 2.3442 7.58783 2.11455C8.751 1.8849 9.95612 2.00501 11.0511 2.45971C12.146 2.91441 13.0817 3.68332 13.7401 4.66937C14.3984 5.65542 14.7498 6.81441 14.75 8.00003Z" fill="#8C90CA"/>
+                        </svg>
+                     </div>
+                     <p>Мин. кол-во вращений</p>
+                  </div>
+                  <p>150</p>
+               </div>
+            </div>
+            <div id="tabs">
+               <div class="tabs__wrap-tags">
+                  <div class="tab tab-active">Игры</div>
+                  <div class="tab">Правила<span> и условия</span></div>
+                  <div class="tab">Призы</div>
+               </div>
+               <div class="tabContent">
+                  <div class="tourney__games tablet-desktop">
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                     <a href="#" class="tourney__game wrap-lazy-load-image">
+                        <img src="images/tourney-game-image.png" alt=" Game name ">
+                     </a>
+                  </div>
+                  <div class="wrap-tourney-games-slider">
+                     <div class="swiper-conteiner tourney-games-slider">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
+                           <div class="swiper-slide">
+                              <img loading="lazy" src="images/tourney-game-image.png" alt=" Game name ">
+                              <div class="swiper-lazy-preloader sk-spinner-pulse"></div>
+                           </div>
                         </div>
-                        <div class="custom-select__body">
-                           <ul class="custom-select__list">
-                              <li class="custom-select__list-item">Slot 1</li>
-                              <li class="custom-select__list-item">Slot 2</li>
-                              <li class="custom-select__list-item">Slot 3</li>
-                              <li class="custom-select__list-item">Slot 4</li>
-                              <li class="custom-select__list-item">Slot 5</li>
-                           </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="tabContent">
+                  <div class="tourney__content">
+                     <ol>
+                        <li>Участвуя в турнире, вы соглашаетесь с Условиями, изложенными здесь, а также с условиями, предоставленными оператор.</li>
+                        <li>В чрезвычайных случаях 3 Oaks Gaming оставляет за собой право отменить акцию Money Desert в любое время, включая оплату выигрыши, если это будет сочтено необходимым.</li>
+                        <li>Только квалифицированные игроки могут претендовать на приз (см. раздел «Информация о кампании»).</li>
+                        <li>В турнире могут участвовать только раунды на реальные деньги.</li>
+                        <li>За участие в турнире не взимается дополнительная плата, кроме платы за вращение.</li>
+                        <li>Каждый игрок получит персональный турнирный идентификатор для таблицы лидеров.</li>
+                        <li>Если у двух или более игроков ничья, то те игроки, которые первыми наберут очки, разрешат ничью.</li>
+                        <li>Правила турнира могут быть изменены в любое время.</li>
+                        <li>Неисправность аннулирует все выплаты.</li>
+                     </ol>
+                  </div>
+                  <div class="other-tournaments">
+                     <div class="other-tournaments__wrap-title">
+                        <h2>Другие турниры</h2>
+                        <div class="other-tournaments__all-tournaments">
+                           <p>Все турниры (6)</p>
+                        </div>
+                     </div>
+                     <div class="other-tournaments__items">
+                        <a href="tourney.html" class="other-tournaments__item">
+                           <img src="images/tourney-big-image.jpg" alt="">
+                        </a>
+                        <a href="tourney.html" class="other-tournaments__item">
+                           <img src="images/tourney-big-image.jpg" alt="">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="tabContent">
+                  <div class="tourney__table">
+                     <div class="tourney__table-row head">
+                        <div class="tourney__table-column">
+                           <h3>Места</h3>
+                        </div>
+                        <div class="tourney__table-column">
+                           <h3>Приз</h3>
+                        </div>
+                        <div class="tourney__table-column">
+                           <h3>Суммарно</h3>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>1</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>2</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>8%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>8%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>3</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>6%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>6%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>4</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>5%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>5</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>4%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>6</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>2,5%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>7</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>1,6%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>8</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,9%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>9</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,8%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>10-20</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0.7%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>21-30</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,6%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>31-40</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,5%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>41-50</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,4%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>51-100</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,3%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>101-150</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,2%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>151-200</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,15%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>10%</p>
+                        </div>
+                     </div>
+                     <div class="tourney__table-row">
+                        <div class="tourney__table-column">
+                           <p>201-250</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>0,12%</p>
+                        </div>
+                        <div class="tourney__table-column">
+                           <p>6%</p>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </div>
-         <div class="n_container n_container-second">
-            <div class="home__slot-head">
-               <h1>Slots</h1>
-               <div class="home__all-slots">
-                  <p>All (5 113)</p>
-               </div>
-            </div>
-            <div class="home__slots">
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-1.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-2.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-3.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-4.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-5.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-6.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-7.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-8.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-9.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-10.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-11.jpg" alt="">
-               </a>
-               <a href="#" class="home__slot wrap-lazy-load-image">
-                  <img src="images/home-slot-12.jpg" alt="">
-               </a>
             </div>
          </div>
       </main>
@@ -883,16 +1173,14 @@
    </div>
 
    <script src="js/script.min.js?_v=20240113203304"></script>
+   <script src="files/tabs/tabs.js?_v=20240113203304"></script>
    <script src="files/js/pop-up.js?_v=20240113203304"></script>
-
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20240113203304"></script>-->
 
    <script src="files/swiper/js/swiper-bundle.min.js?_v=20240113203304"></script>
    <script src="files/swiper/js/settings.js?_v=20240113203304"></script>
 
    <script src="files/lazy-load-for-images/lazy-load-for-images.js?_v=20240113203304"></script>
 
-   <script src="files/custom-select/custom-select.js?_v=20240113203304"></script>
    <script src="files/site-color/site-color.js?_v=20240113203304"></script>
 
    <script src="files/js/demo.js?_v=20240113203304"></script>
